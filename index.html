@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Giao diện giản lược</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. FIXED HEADER Ở TRÊN CÙNG -->
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="logo">facebook</span>
+            <input type="text" class="search-box" placeholder="Tìm kiếm trên Facebook...">
+        </div>
+        <div class="nav-center">
+            <a href="#" class="nav-icon active">🏠 Trang chủ</a>
+            <a href="#" class="nav-icon">👥 Bạn bè</a>
+            <a href="#" class="nav-icon">📺 Watch</a>
+            <a href="#" class="nav-icon">🏪 Marketplace</a>
+        </div>
+        <div class="nav-right">
+            <div class="avatar-sm"></div>
+            <span class="user-name">Người dùng</span>
+        </div>
+    </header>
+
+    <!-- 2. KHUNG NỘI DUNG CHÍNH (3 CỘT) -->
+    <div class="main-layout">
+        
+        <!-- SIDEBAR TRÁI -->
+        <aside class="sidebar-left">
+            <ul>
+                <li class="active"><span class="icon">👤</span> Trang cá nhân</li>
+                <li><span class="icon">👥</span> Bạn bè</li>
+                <li><span class="icon">👥</span> Nhóm</li>
+                <li><span class="icon">🏪</span> Marketplace</li>
+                <li><span class="icon">🕒</span> Kỷ niệm</li>
+                <li><span class="icon">🔖</span> Đã lưu</li>
+                <li><span class="icon">📄</span> Trang</li>
+                <li><span class="icon">⚙️</span> Cài đặt & Quyền riêng tư</li>
+            </ul>
+        </aside>
+
+        <!-- KHU VỰC NEWS FEED CHÍNH (CUỘN ĐỘC LẬP Ở GIỮA) -->
+        <main class="feed-container">
+            
+            <!-- Hộp tạo bài viết mới -->
+            <div class="card create-post">
+                <div class="post-top">
+                    <div class="avatar-sm"></div>
+                    <input type="text" placeholder="Bạn đang nghĩ gì thế?">
+                </div>
+                <div class="post-actions">
+                    <button>🎥 Video trực tiếp</button>
+                    <button>🖼️ Ảnh/video</button>
+                    <button>😊 Cảm xúc/hoạt động</button>
+                </div>
+            </div>
+
+            <!-- Bài viết mẫu 1 -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar-sm"></div>
+                    <div class="author-info">
+                        <strong>Lập Trình Web Cơ Bản</strong>
+                        <small>2 giờ trước · 🌐</small>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Hôm nay chúng ta đã hoàn thành bài tập tạo layout Facebook giản lược với Fixed Header và Sidebar trong CSS! Giao diện responsive và cuộn rất mượt.</p>
+                </div>
+                <div class="post-footer">
+                    <button>👍 Thích</button>
+                    <button>💬 Bình luận</button>
+                    <button>🔄 Chia sẻ</button>
+                </div>
+            </div>
+
+            <!-- Bài viết mẫu 2 -->
+            <div class="card post">
+                <div class="post-header">
+                    <div class="avatar-sm"></div>
+                    <div class="author-info">
+                        <strong>Công Nghệ Thông Tin</strong>
+                        <small>5 giờ trước · 🌐</small>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p>Thuộc tính <code>position: fixed</code> kết hợp với <code>top: 0</code> giúp thanh điều hướng luôn dính chặt vào cạnh trên màn hình ngay cả khi bạn cuộn trang xuống sâu.</p>
+                </div>
+                <div class="post-footer">
+                    <button>👍 Thích</button>
+                    <button>💬 Bình luận</button>
+                    <button>🔄 Chia sẻ</button>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- SIDEBAR PHẢI (DANH SÁCH LIÊN HỆ) -->
+        <aside class="sidebar-right">
+            <h3>Người liên hệ</h3>
+            <ul class="contacts">
+                <li><span class="status-dot"></span> Nguyễn Văn An</li>
+                <li><span class="status-dot"></span> Trần Thị Bình</li>
+                <li><span class="status-dot"></span> Lê Hoàng Cường</li>
+                <li><span class="status-dot"></span> Phạm Minh Đức</li>
+                <li><span class="status-dot"></span> Đỗ Khánh Linh</li>
+            </ul>
+        </aside>
+
+    </div>
+
+</body>
+</html>
